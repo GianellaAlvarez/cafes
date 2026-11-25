@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luna & Miga — Café de especialidad, repostería casera y desayunos preparados con calma en Oviedo.">
+  <meta name="theme-color" content="#f4ede2">
+  <title>Luna & Miga · Café, dulces y pequeños momentos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="nav" id="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="#inicio" aria-label="Luna & Miga, inicio">Luna <span>&</span> Miga</a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#menu">Menú</a>
+        <a href="#ritmo">La tarde</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2200&q=85"
+        alt="Mesa acogedora con café y repostería"
+      >
+      <div class="hero-content">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Cafetería · Pastelería · Oviedo</span>
+          <h1>Luna <span>&</span><br>Miga</h1>
+          <p class="hero-subtitle">Café, dulces y pequeños momentos.</p>
+          <p class="hero-description">
+            Café de especialidad, repostería casera y desayunos preparados con calma.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#menu">Ver menú</a>
+            <a class="btn btn-light" href="#ubicacion">Cómo llegar</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-note">Hecho despacio · servido con cariño</div>
+    </section>
+
+    <section class="story" id="nosotros">
+      <div class="container story-grid">
+        <div class="story-image-wrap reveal">
+          <div class="story-collage-pair">
+            <img
+              class="story-photo-main"
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=85"
+              alt="Taza de café de especialidad recién servida"
+              loading="lazy"
+            >
+            <img
+              class="story-photo-secondary"
+              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=85"
+              alt="Croissants artesanales recién horneados"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="story-badge-bar">
+            <span>✦ Horno encendido cada mañana</span>
+            <strong>Sin prisas en el centro de Oviedo</strong>
+          </div>
+        </div>
+
+        <div class="story-copy reveal">
+          <span class="eyebrow">Nuestra historia</span>
+          <h2>Una cafetería hecha para quedarse un rato</h2>
+          <p>
+            Luna & Miga nació de una idea sencilla: crear un lugar donde tomar un buen café no tuviera que ser algo rápido.
+          </p>
+          <p>
+            Aquí hacemos nuestra repostería cada mañana, trabajamos con café de especialidad y creemos que no hay ninguna prisa por terminar el desayuno.
+          </p>
+          <p>
+            Ven a leer, conversar, trabajar un rato o simplemente sentarte con un café.
+          </p>
+          <div class="signature">— Nos vemos en Luna & Miga.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-intro reveal">
+          <span class="eyebrow">Algo rico está esperando</span>
+          <h2>Nuestro menú</h2>
+          <p>Café bien hecho, cosas recién horneadas y desayunos que dan ganas de alargar la mañana.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal">
+            <h3><span class="menu-icon">☕</span> Café</h3>
+            <div class="menu-item"><span>Espresso</span><span class="menu-price">1,50 €</span></div>
+            <div class="menu-item"><span>Americano</span><span class="menu-price">1,70 €</span></div>
+            <div class="menu-item"><span>Café con leche</span><span class="menu-price">2,00 €</span></div>
+            <div class="menu-item"><span>Cappuccino</span><span class="menu-price">2,40 €</span></div>
+            <div class="menu-item"><span>Latte</span><span class="menu-price">2,50 €</span></div>
+            <div class="menu-item"><span>Mocha</span><span class="menu-price">2,80 €</span></div>
+          </article>
+
+          <article class="menu-card reveal">
+            <h3><span class="menu-icon">🥐</span> Repostería</h3>
+            <div class="menu-item"><span>Croissant de mantequilla</span><span class="menu-price">2,00 €</span></div>
+            <div class="menu-item"><span>Roll de canela</span><span class="menu-price">2,80 €</span></div>
+            <div class="menu-item"><span>Cookie de chocolate</span><span class="menu-price">2,20 €</span></div>
+            <div class="menu-item"><span>Tarta de queso</span><span class="menu-price">4,50 €</span></div>
+            <div class="menu-item"><span>Brownie</span><span class="menu-price">3,50 €</span></div>
+          </article>
+
+          <article class="menu-card featured reveal">
+            <span class="featured-label">Favorito de la casa</span>
+            <h3><span class="menu-icon">🍳</span> Desayunos</h3>
+            <div class="menu-item"><span>Tostada de tomate y aceite</span><span class="menu-price">3,50 €</span></div>
+            <div class="menu-item"><span>Tostada de aguacate</span><span class="menu-price">5,50 €</span></div>
+            <div class="menu-item"><span>Yogur con fruta y granola</span><span class="menu-price">4,80 €</span></div>
+            <div class="menu-item"><span>Brunch Luna</span><span class="menu-price">9,90 €</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Segunda parte interactiva: dial de horas + generador de combinaciones -->
+    <section class="rhythm-section" id="ritmo">
+      <div class="container">
+        <div class="rhythm-stage reveal" id="rhythmStage">
+          <div class="rhythm-top">
+            <div>
+              <span class="eyebrow">Laboratorio de sobremesa</span>
+              <h2>El pulso de cada hora</h2>
+            </div>
+
+            <div class="dial-control" role="group" aria-label="Elegir franja del día">
+              <div class="dial-needle" id="dialNeedle" aria-hidden="true"></div>
+              <button type="button" class="dial-btn active" data-angle="0" data-slot="manana">08h · Horno</button>
+              <button type="button" class="dial-btn" data-angle="120" data-slot="pausa">12h · Pausa</button>
+              <button type="button" class="dial-btn" data-angle="240" data-slot="tarde">17h · Merienda</button>
+            </div>
+          </div>
+
+          <div class="rhythm-main">
+            <div class="rhythm-story">
+              <h3 id="slotTitle">Bandejas calientes nada más abrir</h3>
+              <p id="slotDesc">
+                El aroma a mantequilla tostada y canela marca el inicio del día. Sacamos croissants y rolls recién hechos mientras calibramos el espresso.
+              </p>
+              <div class="slot-tags" id="slotTags">
+                <span>✦ Recién salido del horno</span>
+                <span>✦ Café de especialidad</span>
+              </div>
+            </div>
+
+            <div class="combo-generator" id="comboGenerator">
+              <div class="combo-head">
+                <span>SUGERENCIA AL AZAR</span>
+                <button type="button" class="combo-spin-btn" id="spinComboBtn" title="Probar otra combinación">
+                  ↻ Otra mezcla
+                </button>
+              </div>
+              <div class="combo-display" id="comboDisplay">
+                <strong id="comboTitle">Roll de canela + Latte</strong>
+                <p id="comboNote">Dulzor especiado con leche texturizada sedosa.</p>
+                <span class="combo-price" id="comboPrice">5,30 €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collage compacto en escritorio, bien proporcionado en móvil -->
+    <section class="gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-intro reveal">
+          <span class="eyebrow">Un vistazo por dentro</span>
+          <h2>Pequeños momentos</h2>
+          <p>Una mesa, algo recién horneado y ese ratito que acabas quedándote más de lo previsto.</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=85" alt="Interior de cafetería" loading="lazy">
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=85" alt="Pan y repostería recién horneada" loading="lazy">
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=85" alt="Desayuno con fruta" loading="lazy">
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=85" alt="Taza de café sobre una mesa" loading="lazy">
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=85" alt="Tarta casera" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="section-intro reveal">
+          <span class="eyebrow">Nos hace ilusión leer esto</span>
+          <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+
+        <div class="review-grid">
+          <article class="review reveal">
+            <div class="stars" aria-label="5 estrellas">★★★★★</div>
+            <p>“El roll de canela está increíble. Y el café probablemente sea de los mejores que he probado por aquí.”</p>
+            <span class="review-author">— Marta G.</span>
+          </article>
+          <article class="review reveal">
+            <div class="stars" aria-label="5 estrellas">★★★★★</div>
+            <p>“El sitio es precioso y muy tranquilo. Perfecto para desayunar y trabajar un rato.”</p>
+            <span class="review-author">— Daniel R.</span>
+          </article>
+          <article class="review reveal">
+            <div class="stars" aria-label="5 estrellas">★★★★★</div>
+            <p>“Probamos el brunch y salimos encantados. Volveremos seguro.”</p>
+            <span class="review-author">— Lucía M.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="location" id="ubicacion">
+      <div class="container">
+        <div class="location-card reveal">
+          <div class="location-info">
+            <span class="eyebrow">Ven a visitarnos</span>
+            <h2>Tu próxima pausa está aquí.</h2>
+            <div class="address">
+              <strong>📍 Calle de la Luna, 18</strong><br>
+              33009 Oviedo, Asturias
+            </div>
+
+            <table class="hours" aria-label="Horario de apertura">
+              <tbody>
+                <tr><td>Lunes</td><td>Cerrado</td></tr>
+                <tr><td>Martes a Viernes</td><td>08:00–19:00</td></tr>
+                <tr><td>Sábado</td><td>09:00–20:00</td></tr>
+                <tr><td>Domingo</td><td>09:00–15:00</td></tr>
+              </tbody>
+            </table>
+
+            <a
+              class="btn btn-primary"
+              href="https://www.google.com/maps/search/?api=1&query=Calle+de+la+Luna+18%2C+33009+Oviedo%2C+Asturias"
+              target="_blank"
+              rel="noopener"
+            >Abrir en Google Maps</a>
+          </div>
+
+          <div class="map" aria-label="Mapa interactivo de Google Maps en Calle de la Luna, 18, Oviedo">
+            <iframe
+              title="Ubicación de Luna & Miga en Oviedo"
+              src="https://maps.google.com/maps?q=Calle%20de%20la%20Luna%2018%2C%2033009%20Oviedo%2C+Asturias&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <div class="social reveal">
+          <div>
+            <h3>Síguenos · @lunaymiga</h3>
+            <p>Café, repostería y momentos que merecen una foto.</p>
+          </div>
+          <a class="btn" href="https://www.instagram.com/lunaymiga/" target="_blank" rel="noopener">Ver Instagram</a>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-copy reveal">
+            <span class="eyebrow">¿Hablamos?</span>
+            <h2>Cuéntanos algo.</h2>
+            <p>
+              ¿Tienes una pregunta, quieres proponernos algo o simplemente quieres saludarnos?
+              Escríbenos. Prometemos leerlo entre café y café.
+            </p>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="field">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" placeholder="Escribe tu mensaje..." required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="#inicio">Luna <span>&</span> Miga</a>
+          <p class="footer-tagline">Café, dulces y pequeños momentos.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#menu">Menú</a>
+          <a href="#ritmo">La tarde</a>
+          <a href="#galeria">Galería</a>
+          <a href="https://www.instagram.com/lunaymiga/" target="_blank" rel="noopener">Instagram</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>Calle de la Luna, 18 · Oviedo</span>
+        <span>© 2026 Luna & Miga</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
